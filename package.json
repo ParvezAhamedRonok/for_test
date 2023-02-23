@@ -1,15 +1,19 @@
 {
   "name": "mern-life-uk-test",
+  "homepage": "https://ParvezAhamedRonok.github.io/for_new_project",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "predeploy" : "npm run build",
+    "deploy" : "gh-pages -d build", 
     "build": "vite build",
     "preview": "vite preview",
     "watch-css": "npx tailwindcss -i ./src/default.css -o ./src/index.css --watch"
   },
   "dependencies": {
+    "gh-pages": "^5.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.7.1",
